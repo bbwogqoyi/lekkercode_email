@@ -6,18 +6,37 @@ const db = new Database({
   auth: { username: "lekkercode", password: "lekkercode" },
 });
 
+// db.dropDatabase('lekkercode_email').then(
+//   () => console.log('Database created'),
+//   err => console.error('Failed to create database:', err)
+// );
 
-db.collection('Mailbox').create().then(
-  () => console.log('Mailbox collection created'),
-  err => console.error('Failed to create Mailbox collection:', err)
-);
+// db.createDatabase('lekkercode_email').then(
+//   () => console.log('Database created'),
+//   err => console.error('Failed to create database:', err)
+// );
 
-db.collection('Message').create().then(
-  () => console.log('Message collection created'),
-  err => console.error('Failed to create Message collection:', err)
-);
+// db.collection('accounts').create().then(
+//   () => console.log('accounts created'),
+//   err => console.error('Failed to create accounts:', err)
+// );
 
-db.collection('Label').create().then(
-  () => console.log('Label collection created'),
-  err => console.error('Failed to create Label collection:', err)
-);
+// db.collection('messages').create().then(
+//   () => console.log('messages created'),
+//   err => console.error('Failed to create messages:', err)
+// );
+
+// db.collection('labels').create().then(
+//   () => console.log('labels created'),
+//   err => console.error('Failed to create labels:', err)
+// );
+
+// db.createEdgeCollection('acount_mail').then(
+//   () => console.log('acount_mail edge collection created'),
+//   err => console.error('Failed to create acount_mail edge collection:', err)
+// );
+
+// db.createEdgeCollection('message_labels').then(
+//   () => console.log('message_labels edge collection created'),
+//   err => console.error('Failed to create message_labels edge collection:', err)
+// );
